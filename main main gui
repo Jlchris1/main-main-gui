@@ -1,0 +1,1510 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local scroll = Instance.new("ScrollingFrame")
+local flygui = Instance.new("TextButton")
+local speed2 = Instance.new("TextButton")
+local speed5 = Instance.new("TextButton")
+local speed7 = Instance.new("TextButton")
+local loopspeed5 = Instance.new("TextButton")
+local speed4 = Instance.new("TextButton")
+local speed6 = Instance.new("TextButton")
+local loopspeed2 = Instance.new("TextButton")
+local speed3 = Instance.new("TextButton")
+local loopspeed6 = Instance.new("TextButton")
+local speed5_2 = Instance.new("TextButton")
+local loopspeed7 = Instance.new("TextButton")
+local loopspeed4 = Instance.new("TextButton")
+local speed1 = Instance.new("TextButton")
+local loopspeed = Instance.new("TextButton")
+local flygui_2 = Instance.new("TextButton")
+local loopspeed3 = Instance.new("TextButton")
+local speed = Instance.new("TextButton")
+local stoploops = Instance.new("TextButton")
+local antigameplaypaused = Instance.new("TextButton")
+local maxzoom100kmax = Instance.new("TextButton")
+local antifirstperson = Instance.new("TextButton")
+local loopmaxzoom100kmax = Instance.new("TextButton")
+local loopantigameplaypaused = Instance.new("TextButton")
+local loopantifp = Instance.new("TextButton")
+local antivoid = Instance.new("TextButton")
+local infjump = Instance.new("TextButton")
+local loopantivoid = Instance.new("TextButton")
+local loopinfjump = Instance.new("TextButton")
+local explorer = Instance.new("TextButton")
+local remotespy = Instance.new("TextButton")
+local positionfinder = Instance.new("TextButton")
+local speed175 = Instance.new("TextButton")
+local loopspeed175 = Instance.new("TextButton")
+local jp150 = Instance.new("TextButton")
+local jp275 = Instance.new("TextButton")
+local jp3100 = Instance.new("TextButton")
+local jp4150 = Instance.new("TextButton")
+local jp5250 = Instance.new("TextButton")
+local jp6500 = Instance.new("TextButton")
+local jp7750 = Instance.new("TextButton")
+local lpjp500 = Instance.new("TextButton")
+local lpjp750 = Instance.new("TextButton")
+local lpjp50 = Instance.new("TextButton")
+local lpjpv75 = Instance.new("TextButton")
+local lpjp100 = Instance.new("TextButton")
+local lpjp150 = Instance.new("TextButton")
+local lpjp250 = Instance.new("TextButton")
+local bpsguilauncher = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local toggle = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+scroll.Name = "scroll"
+scroll.Parent = ScreenGui
+scroll.Active = true
+scroll.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+scroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+scroll.BorderSizePixel = 0
+scroll.Position = UDim2.new(0.553385794, 0, 0.376776218, 0)
+scroll.Size = UDim2.new(0, 305, 0, 310)
+scroll.CanvasSize = UDim2.new(0, 0, 15, 0)
+
+flygui.Name = "flygui"
+flygui.Parent = scroll
+flygui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+flygui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+flygui.BorderSizePixel = 0
+flygui.Position = UDim2.new(-0.00484212255, 0, -0.00163003244, 0)
+flygui.Size = UDim2.new(0, 98, 0, 50)
+flygui.Font = Enum.Font.SourceSans
+flygui.Text = "fly gui"
+flygui.TextColor3 = Color3.fromRGB(0, 0, 0)
+flygui.TextSize = 14.000
+
+speed2.Name = "speed2"
+speed2.Parent = scroll
+speed2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+speed2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speed2.BorderSizePixel = 0
+speed2.Position = UDim2.new(0.00499387644, 0, 0.088851437, 0)
+speed2.Size = UDim2.new(0, 98, 0, 50)
+speed2.Font = Enum.Font.SourceSans
+speed2.Text = "speed 35"
+speed2.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed2.TextSize = 14.000
+
+speed5.Name = "speed5"
+speed5.Parent = scroll
+speed5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+speed5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speed5.BorderSizePixel = 0
+speed5.Position = UDim2.new(-1.79601991, 0, -0.31859386, 0)
+speed5.Size = UDim2.new(0, 200, 0, 50)
+speed5.Font = Enum.Font.SourceSans
+speed5.Text = "speed 45"
+speed5.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed5.TextSize = 14.000
+
+speed7.Name = "speed7"
+speed7.Parent = scroll
+speed7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+speed7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speed7.BorderSizePixel = 0
+speed7.Position = UDim2.new(-0.0132290199, 0, 0.135122389, 0)
+speed7.Size = UDim2.new(0, 98, 0, 50)
+speed7.Font = Enum.Font.SourceSans
+speed7.Text = "speed 70"
+speed7.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed7.TextSize = 14.000
+
+loopspeed5.Name = "loopspeed5"
+loopspeed5.Parent = scroll
+loopspeed5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loopspeed5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed5.BorderSizePixel = 0
+loopspeed5.Position = UDim2.new(0.400000006, 0, 0.159999996, 0)
+loopspeed5.Size = UDim2.new(0, 98, 0, 50)
+loopspeed5.Font = Enum.Font.SourceSans
+loopspeed5.Text = "loopspeed 100"
+loopspeed5.TextColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed5.TextSize = 14.000
+
+speed4.Name = "speed4"
+speed4.Parent = scroll
+speed4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+speed4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speed4.BorderSizePixel = 0
+speed4.Position = UDim2.new(0.00341176521, 0, 0.179122046, 0)
+speed4.Size = UDim2.new(0, 98, 0, 50)
+speed4.Font = Enum.Font.SourceSans
+speed4.Text = "speed 150"
+speed4.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed4.TextSize = 14.000
+
+speed6.Name = "speed6"
+speed6.Parent = scroll
+speed6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+speed6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speed6.BorderSizePixel = 0
+speed6.Position = UDim2.new(0.00383600965, 0, 0.196673393, 0)
+speed6.Size = UDim2.new(0, 98, 0, 50)
+speed6.Font = Enum.Font.SourceSans
+speed6.Text = "speed 250"
+speed6.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed6.TextSize = 14.000
+
+loopspeed2.Name = "loopspeed2"
+loopspeed2.Parent = scroll
+loopspeed2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loopspeed2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed2.BorderSizePixel = 0
+loopspeed2.Position = UDim2.new(0.400000006, 0, 0.0890000015, 0)
+loopspeed2.Size = UDim2.new(0, 98, 0, 50)
+loopspeed2.Font = Enum.Font.SourceSans
+loopspeed2.Text = "loopspeed 35"
+loopspeed2.TextColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed2.TextSize = 14.000
+
+speed3.Name = "speed3"
+speed3.Parent = scroll
+speed3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+speed3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speed3.BorderSizePixel = 0
+speed3.Position = UDim2.new(-0.00484212255, 0, -0.00163003244, 0)
+speed3.Size = UDim2.new(0, 98, 0, 50)
+speed3.Font = Enum.Font.SourceSans
+speed3.Text = "fly gui"
+speed3.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed3.TextSize = 14.000
+
+loopspeed6.Name = "loopspeed6"
+loopspeed6.Parent = scroll
+loopspeed6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loopspeed6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed6.BorderSizePixel = 0
+loopspeed6.Position = UDim2.new(0.400000006, 0, 0.179000005, 0)
+loopspeed6.Size = UDim2.new(0, 98, 0, 50)
+loopspeed6.Font = Enum.Font.SourceSans
+loopspeed6.Text = "loopspeed 150"
+loopspeed6.TextColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed6.TextSize = 14.000
+
+speed5_2.Name = "speed5"
+speed5_2.Parent = scroll
+speed5_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+speed5_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speed5_2.BorderSizePixel = 0
+speed5_2.Position = UDim2.new(-1.79601991, 0, -0.31859386, 0)
+speed5_2.Size = UDim2.new(0, 200, 0, 50)
+speed5_2.Font = Enum.Font.SourceSans
+speed5_2.Text = "speed 45"
+speed5_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed5_2.TextSize = 14.000
+
+loopspeed7.Name = "loopspeed7"
+loopspeed7.Parent = scroll
+loopspeed7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loopspeed7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed7.BorderSizePixel = 0
+loopspeed7.Position = UDim2.new(0.400000006, 0, 0.196999997, 0)
+loopspeed7.Size = UDim2.new(0, 98, 0, 50)
+loopspeed7.Font = Enum.Font.SourceSans
+loopspeed7.Text = "loopspeed 250"
+loopspeed7.TextColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed7.TextSize = 14.000
+
+loopspeed4.Name = "loopspeed4"
+loopspeed4.Parent = scroll
+loopspeed4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loopspeed4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed4.BorderSizePixel = 0
+loopspeed4.Position = UDim2.new(0.400000006, 0, 0.135000005, 0)
+loopspeed4.Size = UDim2.new(0, 98, 0, 50)
+loopspeed4.Font = Enum.Font.SourceSans
+loopspeed4.Text = "loopspeed 70"
+loopspeed4.TextColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed4.TextSize = 14.000
+
+speed1.Name = "speed1"
+speed1.Parent = scroll
+speed1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+speed1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speed1.BorderSizePixel = 0
+speed1.Position = UDim2.new(0, 0, 0.159999996, 0)
+speed1.Size = UDim2.new(0, 98, 0, 50)
+speed1.Font = Enum.Font.SourceSans
+speed1.Text = "speed 100"
+speed1.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed1.TextSize = 14.000
+
+loopspeed.Name = "loopspeed"
+loopspeed.Parent = scroll
+loopspeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loopspeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed.BorderSizePixel = 0
+loopspeed.Position = UDim2.new(0.400000006, 0, 0.0659999996, 0)
+loopspeed.Size = UDim2.new(0, 98, 0, 50)
+loopspeed.Font = Enum.Font.SourceSans
+loopspeed.Text = "loopspeed 25"
+loopspeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed.TextSize = 14.000
+
+flygui_2.Name = "flygui"
+flygui_2.Parent = scroll
+flygui_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+flygui_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+flygui_2.BorderSizePixel = 0
+flygui_2.Position = UDim2.new(-0, 0, 0.0659999996, 0)
+flygui_2.Size = UDim2.new(0, 98, 0, 50)
+flygui_2.Font = Enum.Font.SourceSans
+flygui_2.Text = "speed 25"
+flygui_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+flygui_2.TextSize = 14.000
+
+loopspeed3.Name = "loopspeed3"
+loopspeed3.Parent = scroll
+loopspeed3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loopspeed3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed3.BorderSizePixel = 0
+loopspeed3.Position = UDim2.new(0.400000006, 0, 0.112000003, 0)
+loopspeed3.Size = UDim2.new(0, 98, 0, 50)
+loopspeed3.Font = Enum.Font.SourceSans
+loopspeed3.Text = "loopspeed 50"
+loopspeed3.TextColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed3.TextSize = 14.000
+
+speed.Name = "speed?"
+speed.Parent = scroll
+speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speed.BorderSizePixel = 0
+speed.Position = UDim2.new(-0, 0, 0.112000003, 0)
+speed.Size = UDim2.new(0, 98, 0, 50)
+speed.Font = Enum.Font.SourceSans
+speed.Text = "speed 50"
+speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed.TextSize = 14.000
+
+stoploops.Name = "stop loops"
+stoploops.Parent = scroll
+stoploops.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+stoploops.BorderColor3 = Color3.fromRGB(0, 0, 0)
+stoploops.BorderSizePixel = 0
+stoploops.Position = UDim2.new(0, 0, 0.0219999999, 0)
+stoploops.Size = UDim2.new(0, 300, 0, 50)
+stoploops.Font = Enum.Font.SourceSans
+stoploops.Text = "stop loops"
+stoploops.TextColor3 = Color3.fromRGB(0, 0, 0)
+stoploops.TextSize = 14.000
+
+antigameplaypaused.Name = "antigameplaypaused"
+antigameplaypaused.Parent = scroll
+antigameplaypaused.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+antigameplaypaused.BorderColor3 = Color3.fromRGB(0, 0, 0)
+antigameplaypaused.BorderSizePixel = 0
+antigameplaypaused.Position = UDim2.new(0, 0, 0.223000005, 0)
+antigameplaypaused.Size = UDim2.new(0, 98, 0, 50)
+antigameplaypaused.Font = Enum.Font.SourceSans
+antigameplaypaused.Text = "anti gameplay paused"
+antigameplaypaused.TextColor3 = Color3.fromRGB(0, 0, 0)
+antigameplaypaused.TextSize = 12.000
+
+maxzoom100kmax.Name = "maxzoom100k(max)"
+maxzoom100kmax.Parent = scroll
+maxzoom100kmax.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+maxzoom100kmax.BorderColor3 = Color3.fromRGB(0, 0, 0)
+maxzoom100kmax.BorderSizePixel = 0
+maxzoom100kmax.Position = UDim2.new(0.317999989, 0, 0.223000005, 0)
+maxzoom100kmax.Size = UDim2.new(0, 98, 0, 50)
+maxzoom100kmax.Font = Enum.Font.SourceSans
+maxzoom100kmax.Text = "maxzoom 100k (max)"
+maxzoom100kmax.TextColor3 = Color3.fromRGB(0, 0, 0)
+maxzoom100kmax.TextSize = 14.000
+
+antifirstperson.Name = "antifirstperson"
+antifirstperson.Parent = scroll
+antifirstperson.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+antifirstperson.BorderColor3 = Color3.fromRGB(0, 0, 0)
+antifirstperson.BorderSizePixel = 0
+antifirstperson.Position = UDim2.new(0.635999978, 0, 0.223000005, 0)
+antifirstperson.Size = UDim2.new(0, 98, 0, 50)
+antifirstperson.Font = Enum.Font.SourceSans
+antifirstperson.Text = "anti first person"
+antifirstperson.TextColor3 = Color3.fromRGB(0, 0, 0)
+antifirstperson.TextSize = 14.000
+
+loopmaxzoom100kmax.Name = "loop maxzoom100k(max)"
+loopmaxzoom100kmax.Parent = scroll
+loopmaxzoom100kmax.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loopmaxzoom100kmax.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loopmaxzoom100kmax.BorderSizePixel = 0
+loopmaxzoom100kmax.Position = UDim2.new(0.32100001, 0, 0.244000003, 0)
+loopmaxzoom100kmax.Size = UDim2.new(0, 98, 0, 50)
+loopmaxzoom100kmax.Font = Enum.Font.SourceSans
+loopmaxzoom100kmax.Text = "loop maxzoom 100k (max)"
+loopmaxzoom100kmax.TextColor3 = Color3.fromRGB(0, 0, 0)
+loopmaxzoom100kmax.TextSize = 10.000
+
+loopantigameplaypaused.Name = "loop anti gameplaypaused"
+loopantigameplaypaused.Parent = scroll
+loopantigameplaypaused.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loopantigameplaypaused.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loopantigameplaypaused.BorderSizePixel = 0
+loopantigameplaypaused.Position = UDim2.new(0, 0, 0.244000003, 0)
+loopantigameplaypaused.Size = UDim2.new(0, 98, 0, 50)
+loopantigameplaypaused.Font = Enum.Font.SourceSans
+loopantigameplaypaused.Text = "loop anti gameplay paused"
+loopantigameplaypaused.TextColor3 = Color3.fromRGB(0, 0, 0)
+loopantigameplaypaused.TextSize = 10.000
+
+loopantifp.Name = "loop anti fp"
+loopantifp.Parent = scroll
+loopantifp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loopantifp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loopantifp.BorderSizePixel = 0
+loopantifp.Position = UDim2.new(0.635999978, 0, 0.244000003, 0)
+loopantifp.Size = UDim2.new(0, 98, 0, 50)
+loopantifp.Font = Enum.Font.SourceSans
+loopantifp.Text = "loop anti first person"
+loopantifp.TextColor3 = Color3.fromRGB(0, 0, 0)
+loopantifp.TextSize = 11.000
+
+antivoid.Name = "antivoid"
+antivoid.Parent = scroll
+antivoid.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+antivoid.BorderColor3 = Color3.fromRGB(0, 0, 0)
+antivoid.BorderSizePixel = 0
+antivoid.Position = UDim2.new(0, 0, 0.264999986, 0)
+antivoid.Size = UDim2.new(0, 98, 0, 50)
+antivoid.Font = Enum.Font.SourceSans
+antivoid.Text = "antivoid"
+antivoid.TextColor3 = Color3.fromRGB(0, 0, 0)
+antivoid.TextSize = 14.000
+
+infjump.Name = "infjump"
+infjump.Parent = scroll
+infjump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infjump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+infjump.BorderSizePixel = 0
+infjump.Position = UDim2.new(0.400000006, 0, 0.264999986, 0)
+infjump.Size = UDim2.new(0, 98, 0, 50)
+infjump.Font = Enum.Font.SourceSans
+infjump.Text = "inf jump"
+infjump.TextColor3 = Color3.fromRGB(0, 0, 0)
+infjump.TextSize = 14.000
+
+loopantivoid.Name = "loop anti void"
+loopantivoid.Parent = scroll
+loopantivoid.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loopantivoid.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loopantivoid.BorderSizePixel = 0
+loopantivoid.Position = UDim2.new(0.400000006, 0, 0.284999996, 0)
+loopantivoid.Size = UDim2.new(0, 98, 0, 50)
+loopantivoid.Font = Enum.Font.SourceSans
+loopantivoid.Text = "loop anti void"
+loopantivoid.TextColor3 = Color3.fromRGB(0, 0, 0)
+loopantivoid.TextSize = 14.000
+
+loopinfjump.Name = "loop inf jump"
+loopinfjump.Parent = scroll
+loopinfjump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loopinfjump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loopinfjump.BorderSizePixel = 0
+loopinfjump.Position = UDim2.new(-0, 0, 0.284999996, 0)
+loopinfjump.Size = UDim2.new(0, 98, 0, 50)
+loopinfjump.Font = Enum.Font.SourceSans
+loopinfjump.Text = "loop inf jump"
+loopinfjump.TextColor3 = Color3.fromRGB(0, 0, 0)
+loopinfjump.TextSize = 14.000
+
+explorer.Name = "explorer"
+explorer.Parent = scroll
+explorer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+explorer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+explorer.BorderSizePixel = 0
+explorer.Position = UDim2.new(0, 0, 0.305000007, 0)
+explorer.Size = UDim2.new(0, 300, 0, 50)
+explorer.Font = Enum.Font.SourceSans
+explorer.Text = "explorer mobile (has key)"
+explorer.TextColor3 = Color3.fromRGB(0, 0, 0)
+explorer.TextSize = 14.000
+
+remotespy.Name = "remote spy"
+remotespy.Parent = scroll
+remotespy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+remotespy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+remotespy.BorderSizePixel = 0
+remotespy.Position = UDim2.new(0, 0, 0.344999999, 0)
+remotespy.Size = UDim2.new(0, 300, 0, 50)
+remotespy.Font = Enum.Font.SourceSans
+remotespy.Text = "remote spy"
+remotespy.TextColor3 = Color3.fromRGB(0, 0, 0)
+remotespy.TextSize = 14.000
+
+positionfinder.Name = "position finder"
+positionfinder.Parent = scroll
+positionfinder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+positionfinder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+positionfinder.BorderSizePixel = 0
+positionfinder.Position = UDim2.new(0, 0, 0.324999988, 0)
+positionfinder.Size = UDim2.new(0, 300, 0, 50)
+positionfinder.Font = Enum.Font.SourceSans
+positionfinder.Text = "position finder"
+positionfinder.TextColor3 = Color3.fromRGB(0, 0, 0)
+positionfinder.TextSize = 14.000
+
+speed175.Name = "speed 17.5"
+speed175.Parent = scroll
+speed175.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+speed175.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speed175.BorderSizePixel = 0
+speed175.Position = UDim2.new(0.000442654971, 0, 0.0438709892, 0)
+speed175.Size = UDim2.new(0, 98, 0, 50)
+speed175.Font = Enum.Font.SourceSans
+speed175.Text = "speed 17.5"
+speed175.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed175.TextSize = 14.000
+
+loopspeed175.Name = "loopspeed 17.5"
+loopspeed175.Parent = scroll
+loopspeed175.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loopspeed175.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed175.BorderSizePixel = 0
+loopspeed175.Position = UDim2.new(0.400000006, 0, 0.0439999998, 0)
+loopspeed175.Size = UDim2.new(0, 98, 0, 50)
+loopspeed175.Font = Enum.Font.SourceSans
+loopspeed175.Text = "loopspeed 17.5"
+loopspeed175.TextColor3 = Color3.fromRGB(0, 0, 0)
+loopspeed175.TextSize = 14.000
+
+jp150.Name = "jp1 50"
+jp150.Parent = scroll
+jp150.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jp150.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jp150.BorderSizePixel = 0
+jp150.Position = UDim2.new(0, 0, 0.36500001, 0)
+jp150.Size = UDim2.new(0, 98, 0, 50)
+jp150.Font = Enum.Font.SourceSans
+jp150.Text = "jp 50"
+jp150.TextColor3 = Color3.fromRGB(0, 0, 0)
+jp150.TextSize = 14.000
+
+jp275.Name = "jp2 75"
+jp275.Parent = scroll
+jp275.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jp275.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jp275.BorderSizePixel = 0
+jp275.Position = UDim2.new(0, 0, 0.38499999, 0)
+jp275.Size = UDim2.new(0, 98, 0, 50)
+jp275.Font = Enum.Font.SourceSans
+jp275.Text = "jp 75"
+jp275.TextColor3 = Color3.fromRGB(0, 0, 0)
+jp275.TextSize = 14.000
+
+jp3100.Name = "jp3 100"
+jp3100.Parent = scroll
+jp3100.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jp3100.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jp3100.BorderSizePixel = 0
+jp3100.Position = UDim2.new(0, 0, 0.405000001, 0)
+jp3100.Size = UDim2.new(0, 98, 0, 50)
+jp3100.Font = Enum.Font.SourceSans
+jp3100.Text = "jp 100"
+jp3100.TextColor3 = Color3.fromRGB(0, 0, 0)
+jp3100.TextSize = 14.000
+
+jp4150.Name = "jp4 150"
+jp4150.Parent = scroll
+jp4150.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jp4150.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jp4150.BorderSizePixel = 0
+jp4150.Position = UDim2.new(0, 0, 0.425000012, 0)
+jp4150.Size = UDim2.new(0, 98, 0, 50)
+jp4150.Font = Enum.Font.SourceSans
+jp4150.Text = "jp 150"
+jp4150.TextColor3 = Color3.fromRGB(0, 0, 0)
+jp4150.TextSize = 14.000
+
+jp5250.Name = "jp5 250"
+jp5250.Parent = scroll
+jp5250.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jp5250.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jp5250.BorderSizePixel = 0
+jp5250.Position = UDim2.new(0, 0, 0.444999993, 0)
+jp5250.Size = UDim2.new(0, 98, 0, 50)
+jp5250.Font = Enum.Font.SourceSans
+jp5250.Text = "jp 250"
+jp5250.TextColor3 = Color3.fromRGB(0, 0, 0)
+jp5250.TextSize = 14.000
+
+jp6500.Name = "jp6 500"
+jp6500.Parent = scroll
+jp6500.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jp6500.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jp6500.BorderSizePixel = 0
+jp6500.Position = UDim2.new(0, 0, 0.465000004, 0)
+jp6500.Size = UDim2.new(0, 98, 0, 50)
+jp6500.Font = Enum.Font.SourceSans
+jp6500.Text = "jp 500"
+jp6500.TextColor3 = Color3.fromRGB(0, 0, 0)
+jp6500.TextSize = 14.000
+
+jp7750.Name = "jp7  750"
+jp7750.Parent = scroll
+jp7750.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jp7750.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jp7750.BorderSizePixel = 0
+jp7750.Position = UDim2.new(0, 0, 0.485000014, 0)
+jp7750.Size = UDim2.new(0, 98, 0, 50)
+jp7750.Font = Enum.Font.SourceSans
+jp7750.Text = "jp 750"
+jp7750.TextColor3 = Color3.fromRGB(0, 0, 0)
+jp7750.TextSize = 14.000
+
+lpjp500.Name = "lpjp500"
+lpjp500.Parent = scroll
+lpjp500.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lpjp500.BorderColor3 = Color3.fromRGB(0, 0, 0)
+lpjp500.BorderSizePixel = 0
+lpjp500.Position = UDim2.new(0.400000006, 0, 0.465000004, 0)
+lpjp500.Size = UDim2.new(0, 98, 0, 50)
+lpjp500.Font = Enum.Font.SourceSans
+lpjp500.Text = "loopjp 500"
+lpjp500.TextColor3 = Color3.fromRGB(0, 0, 0)
+lpjp500.TextSize = 14.000
+
+lpjp750.Name = "lpjp750"
+lpjp750.Parent = scroll
+lpjp750.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lpjp750.BorderColor3 = Color3.fromRGB(0, 0, 0)
+lpjp750.BorderSizePixel = 0
+lpjp750.Position = UDim2.new(0.400000006, 0, 0.485000014, 0)
+lpjp750.Size = UDim2.new(0, 98, 0, 50)
+lpjp750.Font = Enum.Font.SourceSans
+lpjp750.Text = "loopjp 750"
+lpjp750.TextColor3 = Color3.fromRGB(0, 0, 0)
+lpjp750.TextSize = 14.000
+
+lpjp50.Name = "lpjp50"
+lpjp50.Parent = scroll
+lpjp50.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lpjp50.BorderColor3 = Color3.fromRGB(0, 0, 0)
+lpjp50.BorderSizePixel = 0
+lpjp50.Position = UDim2.new(0.400000006, 0, 0.36500001, 0)
+lpjp50.Size = UDim2.new(0, 98, 0, 50)
+lpjp50.Font = Enum.Font.SourceSans
+lpjp50.Text = "loopjp 50"
+lpjp50.TextColor3 = Color3.fromRGB(0, 0, 0)
+lpjp50.TextSize = 14.000
+
+lpjpv75.Name = "lpjpv75"
+lpjpv75.Parent = scroll
+lpjpv75.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lpjpv75.BorderColor3 = Color3.fromRGB(0, 0, 0)
+lpjpv75.BorderSizePixel = 0
+lpjpv75.Position = UDim2.new(0.400000006, 0, 0.38499999, 0)
+lpjpv75.Size = UDim2.new(0, 98, 0, 50)
+lpjpv75.Font = Enum.Font.SourceSans
+lpjpv75.Text = "loopjp 75"
+lpjpv75.TextColor3 = Color3.fromRGB(0, 0, 0)
+lpjpv75.TextSize = 14.000
+
+lpjp100.Name = "lpjp100"
+lpjp100.Parent = scroll
+lpjp100.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lpjp100.BorderColor3 = Color3.fromRGB(0, 0, 0)
+lpjp100.BorderSizePixel = 0
+lpjp100.Position = UDim2.new(0.400000006, 0, 0.405000001, 0)
+lpjp100.Size = UDim2.new(0, 98, 0, 50)
+lpjp100.Font = Enum.Font.SourceSans
+lpjp100.Text = "loopjp 100"
+lpjp100.TextColor3 = Color3.fromRGB(0, 0, 0)
+lpjp100.TextSize = 14.000
+
+lpjp150.Name = "lpjp150"
+lpjp150.Parent = scroll
+lpjp150.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lpjp150.BorderColor3 = Color3.fromRGB(0, 0, 0)
+lpjp150.BorderSizePixel = 0
+lpjp150.Position = UDim2.new(0.400000006, 0, 0.425000012, 0)
+lpjp150.Size = UDim2.new(0, 98, 0, 50)
+lpjp150.Font = Enum.Font.SourceSans
+lpjp150.Text = "loopjp 150"
+lpjp150.TextColor3 = Color3.fromRGB(0, 0, 0)
+lpjp150.TextSize = 14.000
+
+lpjp250.Name = "lpjp250"
+lpjp250.Parent = scroll
+lpjp250.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lpjp250.BorderColor3 = Color3.fromRGB(0, 0, 0)
+lpjp250.BorderSizePixel = 0
+lpjp250.Position = UDim2.new(0.400000006, 0, 0.444999993, 0)
+lpjp250.Size = UDim2.new(0, 98, 0, 50)
+lpjp250.Font = Enum.Font.SourceSans
+lpjp250.Text = "loopjp 250"
+lpjp250.TextColor3 = Color3.fromRGB(0, 0, 0)
+lpjp250.TextSize = 14.000
+
+bpsguilauncher.Name = "bps gui launcher"
+bpsguilauncher.Parent = scroll
+bpsguilauncher.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bpsguilauncher.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bpsguilauncher.BorderSizePixel = 0
+bpsguilauncher.Position = UDim2.new(0, 0, 0.503000021, 0)
+bpsguilauncher.Size = UDim2.new(0, 300, 0, 50)
+bpsguilauncher.Font = Enum.Font.SourceSans
+bpsguilauncher.Text = "bps gui"
+bpsguilauncher.TextColor3 = Color3.fromRGB(0, 0, 0)
+bpsguilauncher.TextSize = 14.000
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.55336231, 0, 0.329010874, 0)
+TextLabel.Size = UDim2.new(0, 308, 0, 31)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "jl cmbdar"
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.TextSize = 34.000
+
+toggle.Name = "toggle"
+toggle.Parent = ScreenGui
+toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+toggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggle.BorderSizePixel = 0
+toggle.Position = UDim2.new(0.477857947, 0, 0.0584714338, 0)
+toggle.Size = UDim2.new(0, 51, 0, 50)
+toggle.Font = Enum.Font.SourceSansBold
+toggle.Text = "JL"
+toggle.TextColor3 = Color3.fromRGB(255, 0, 0)
+toggle.TextSize = 45.000
+
+-- Scripts:
+
+local function ELZAD_fake_script() -- flygui.Script 
+	local script = Instance.new('Script', flygui)
+
+	function Click(mouse)
+	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+	
+	
+end
+coroutine.wrap(ELZAD_fake_script)()
+local function CUBCK_fake_script() -- speed2.Script 
+	local script = Instance.new('Script', speed2)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 35
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(CUBCK_fake_script)()
+local function SVBGFT_fake_script() -- speed5.Script 
+	local script = Instance.new('Script', speed5)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 45
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(SVBGFT_fake_script)()
+local function SIXU_fake_script() -- speed7.Script 
+	local script = Instance.new('Script', speed7)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 70
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(SIXU_fake_script)()
+local function KFBI_fake_script() -- loopspeed5.Script 
+	local script = Instance.new('Script', loopspeed5)
+
+	function Click(mouse)
+	_G.toggle = true
+	
+	while _G.toggle do
+	wait(0.3)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+		end
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(KFBI_fake_script)()
+local function KAAXUDU_fake_script() -- speed4.Script 
+	local script = Instance.new('Script', speed4)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(KAAXUDU_fake_script)()
+local function QLWNUZR_fake_script() -- speed6.Script 
+	local script = Instance.new('Script', speed6)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 250
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(QLWNUZR_fake_script)()
+local function JDWB_fake_script() -- loopspeed2.Script 
+	local script = Instance.new('Script', loopspeed2)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait( )
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 350
+		end
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(JDWB_fake_script)()
+local function FQSUMN_fake_script() -- speed3.Script 
+	local script = Instance.new('Script', speed3)
+
+	function Click(mouse)
+	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+	
+	
+end
+coroutine.wrap(FQSUMN_fake_script)()
+local function RJVVMRU_fake_script() -- loopspeed6.Script 
+	local script = Instance.new('Script', loopspeed6)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait( )
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
+		end
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(RJVVMRU_fake_script)()
+local function HVXEV_fake_script() -- speed5_2.Script 
+	local script = Instance.new('Script', speed5_2)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 45
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(HVXEV_fake_script)()
+local function MOBOIMP_fake_script() -- loopspeed7.Script 
+	local script = Instance.new('Script', loopspeed7)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait( )
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 250
+		end
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(MOBOIMP_fake_script)()
+local function LKPDKWC_fake_script() -- loopspeed4.Script 
+	local script = Instance.new('Script', loopspeed4)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait( )
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 70
+		end
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(LKPDKWC_fake_script)()
+local function GKPWWA_fake_script() -- speed1.Script 
+	local script = Instance.new('Script', speed1)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(GKPWWA_fake_script)()
+local function VHSPKMZ_fake_script() -- loopspeed.Script 
+	local script = Instance.new('Script', loopspeed)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait( )
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
+		end
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(VHSPKMZ_fake_script)()
+local function KXWVJJJ_fake_script() -- flygui_2.Script 
+	local script = Instance.new('Script', flygui_2)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(KXWVJJJ_fake_script)()
+local function CBZZK_fake_script() -- loopspeed3.Script 
+	local script = Instance.new('Script', loopspeed3)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait( )
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+		end
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+	
+end
+coroutine.wrap(CBZZK_fake_script)()
+local function AKXNLMI_fake_script() -- speed.Script 
+	local script = Instance.new('Script', speed)
+
+	function Click(mouse)
+		
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+		
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+	
+end
+coroutine.wrap(AKXNLMI_fake_script)()
+local function PKYHO_fake_script() -- stoploops.Script 
+	local script = Instance.new('Script', stoploops)
+
+	function Click(mouse)
+	
+		_G.toggle = false
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(PKYHO_fake_script)()
+local function ANVNJG_fake_script() -- antigameplaypaused.Script 
+	local script = Instance.new('Script', antigameplaypaused)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.GameplayPaused = false
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(ANVNJG_fake_script)()
+local function CMTAVF_fake_script() -- maxzoom100kmax.Script 
+	local script = Instance.new('Script', maxzoom100kmax)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.CameraMaxZoomDistance = 1000000000
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(CMTAVF_fake_script)()
+local function TPUNVKO_fake_script() -- antifirstperson.Script 
+	local script = Instance.new('Script', antifirstperson)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.CameraMinZoomDistance = 0.5
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(TPUNVKO_fake_script)()
+local function UVTY_fake_script() -- loopmaxzoom100kmax.Script 
+	local script = Instance.new('Script', loopmaxzoom100kmax)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait(0.3)
+		game.Players.LocalPlayer.CameraMaxZoomDistance = 1000000000
+		end
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(UVTY_fake_script)()
+local function IOTTH_fake_script() -- loopantigameplaypaused.Script 
+	local script = Instance.new('Script', loopantigameplaypaused)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait(0.3)
+		game.Players.LocalPlayer.GameplayPaused = false
+		end
+		
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(IOTTH_fake_script)()
+local function EYIX_fake_script() -- loopantifp.Script 
+	local script = Instance.new('Script', loopantifp)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait(0.3)
+		game.Players.LocalPlayer.CameraMinZoomDistance = 0.5
+		end
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(EYIX_fake_script)()
+local function BGVMNZW_fake_script() -- antivoid.Script 
+	local script = Instance.new('Script', antivoid)
+
+	function Click(mouse)
+		
+		workspace.FallenPartsDestroyHeight=0/0
+		
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(BGVMNZW_fake_script)()
+local function XKNVZY_fake_script() -- infjump.Script 
+	local script = Instance.new('Script', infjump)
+
+	function Click(mouse)
+	
+		
+	
+		local InfiniteJumpEnabled = true
+		game:GetService("UserInputService").JumpRequest:connect(function()
+			if InfiniteJumpEnabled then
+				game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+			end
+		end)
+	
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(XKNVZY_fake_script)()
+local function RSKGAZC_fake_script() -- loopantivoid.Script 
+	local script = Instance.new('Script', loopantivoid)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait( )
+		workspace.FallenPartsDestroyHeight=0/0
+		end
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(RSKGAZC_fake_script)()
+local function VYBXZ_fake_script() -- loopinfjump.Script 
+	local script = Instance.new('Script', loopinfjump)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait(0.3)
+		
+	
+		local InfiniteJumpEnabled = true
+		game:GetService("UserInputService").JumpRequest:connect(function()
+			if InfiniteJumpEnabled then
+				game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+			end
+		end)
+	end
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(VYBXZ_fake_script)()
+local function EVSHQQG_fake_script() -- explorer.Script 
+	local script = Instance.new('Script', explorer)
+
+	function Click(mouse)
+	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/DEX-Explorer/main/Mobile.lua"))()
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(EVSHQQG_fake_script)()
+local function LKAXZU_fake_script() -- remotespy.Script 
+	local script = Instance.new('Script', remotespy)
+
+	function Click(mouse)
+	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(LKAXZU_fake_script)()
+local function JPSYPSL_fake_script() -- positionfinder.Script 
+	local script = Instance.new('Script', positionfinder)
+
+	function Click(mouse)
+	
+		loadstring(game:HttpGet("https://pastefy.app/fE00IA44/raw"))()
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(JPSYPSL_fake_script)()
+local function KMCG_fake_script() -- speed175.Script 
+	local script = Instance.new('Script', speed175)
+
+	function Click(mouse)
+		
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
+		
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(KMCG_fake_script)()
+local function DJJOF_fake_script() -- loopspeed175.Script 
+	local script = Instance.new('Script', loopspeed175)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait( )
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
+		end
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(DJJOF_fake_script)()
+local function DCJD_fake_script() -- jp150.Script 
+	local script = Instance.new('Script', jp150)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(DCJD_fake_script)()
+local function NKWAV_fake_script() -- jp275.Script 
+	local script = Instance.new('Script', jp275)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 75
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(NKWAV_fake_script)()
+local function MEIAL_fake_script() -- jp3100.Script 
+	local script = Instance.new('Script', jp3100)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(MEIAL_fake_script)()
+local function MKAPZJN_fake_script() -- jp4150.Script 
+	local script = Instance.new('Script', jp4150)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(MKAPZJN_fake_script)()
+local function OTEU_fake_script() -- jp5250.Script 
+	local script = Instance.new('Script', jp5250)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 250
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(OTEU_fake_script)()
+local function NWUOF_fake_script() -- jp6500.Script 
+	local script = Instance.new('Script', jp6500)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 500
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(NWUOF_fake_script)()
+local function HLDG_fake_script() -- jp7750.Script 
+	local script = Instance.new('Script', jp7750)
+
+	function Click(mouse)
+	
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 750
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(HLDG_fake_script)()
+local function RSPZN_fake_script() -- lpjp500.Script 
+	local script = Instance.new('Script', lpjp500)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait( )
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 500
+		end
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(RSPZN_fake_script)()
+local function CIFA_fake_script() -- lpjp750.Script 
+	local script = Instance.new('Script', lpjp750)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait( )
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 750
+		end
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(CIFA_fake_script)()
+local function OZIGA_fake_script() -- lpjp50.Script 
+	local script = Instance.new('Script', lpjp50)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait( )
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+		end
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(OZIGA_fake_script)()
+local function NPLX_fake_script() -- lpjpv75.Script 
+	local script = Instance.new('Script', lpjpv75)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait( )
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 75
+		end
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(NPLX_fake_script)()
+local function JSGM_fake_script() -- lpjp100.Script 
+	local script = Instance.new('Script', lpjp100)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait( )
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+		end
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(JSGM_fake_script)()
+local function RHQKFWR_fake_script() -- lpjp150.Script 
+	local script = Instance.new('Script', lpjp150)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait( )
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
+		end
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(RHQKFWR_fake_script)()
+local function XCQKM_fake_script() -- lpjp250.Script 
+	local script = Instance.new('Script', lpjp250)
+
+	function Click(mouse)
+		_G.toggle = true
+	
+		while _G.toggle do
+			wait( )
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 250
+		end
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(XCQKM_fake_script)()
+local function UJHGM_fake_script() -- bpsguilauncher.mainbpsgui 
+	local script = Instance.new('Script', bpsguilauncher)
+
+	function Click(mouse)
+	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Jlchris1/trfhfhgfhjftdrgfnhjytrdfghju/main/jhrfghjuyhftdrshuytrdfs"))()
+	
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(UJHGM_fake_script)()
+local function QIEPCA_fake_script() -- bpsguilauncher.cmds 
+	local script = Instance.new('Script', bpsguilauncher)
+
+	function Click(mouse)
+	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Jlchris1/uytretyytrhyjht/refs/heads/main/utyretyrkuy"))()
+		
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+end
+coroutine.wrap(QIEPCA_fake_script)()
+local function SQOCM_fake_script() -- toggle.LocalScript 
+	local script = Instance.new('LocalScript', toggle)
+
+	local back = script.Parent.Parent.scroll
+	local con = script.Parent.Parent.TextLabel
+	local window = {
+		count = 0;
+		toggles = {},
+		closed = false;
+	}
+	script.Parent.MouseButton1Click:connect(function()
+		window.closed = not window.closed
+		script.Parent.Text = (window.closed and "JL " or "JL")
+		if script.Parent.Text == "JL " then
+			back:TweenSize(UDim2.new(0, 190,0, 0), "Out", "Sine", 0.5)
+			con:TweenSize(UDim2.new(0, 190,0, 0), "Out", "Sine", 0.5)
+			wait(0.1) do
+				con.Visible = false
+			end
+		else
+			back:TweenSize(UDim2.new(0, 305,0, 310), "Out", "Sine", 0.5)
+			con:TweenSize(UDim2.new(0, 305,0, 31), "Out", "Sine", 0.5)
+			wait(0.2) do
+				con.Visible = true
+			end
+		end
+	
+	end)
+end
+coroutine.wrap(SQOCM_fake_script)()
+local function BXLSS_fake_script() -- toggle.LocalScript 
+	local script = Instance.new('LocalScript', toggle)
+
+	local dragger = {}; 
+	local resizer = {};
+	
+	do
+		local mouse = game:GetService("Players").LocalPlayer:GetMouse();
+		local inputService = game:GetService('UserInputService');
+		local heartbeat = game:GetService("RunService").Heartbeat;
+		-- // credits to Ririchi / Inori for this cute drag function :)
+		function dragger.new(frame)
+			local s, event = pcall(function()
+				return frame.MouseEnter
+			end)
+	
+			if s then
+				frame.Active = true;
+	
+				event:connect(function()
+					local input = frame.InputBegan:connect(function(key)
+						if key.UserInputType == Enum.UserInputType.MouseButton1 then
+							local objectPosition = Vector2.new(mouse.X - frame.AbsolutePosition.X, mouse.Y - frame.AbsolutePosition.Y);
+							while heartbeat:wait() and inputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+								frame:TweenPosition(UDim2.new(0, mouse.X - objectPosition.X + (frame.Size.X.Offset * frame.AnchorPoint.X), 0, mouse.Y - objectPosition.Y + (frame.Size.Y.Offset * frame.AnchorPoint.Y)), 'Out', 'Quad', 0.1, true);
+							end
+						end
+					end)
+	
+					local leave;
+					leave = frame.MouseLeave:connect(function()
+						input:disconnect();
+						leave:disconnect();
+					end)
+				end)
+			end
+		end
+	
+		function resizer.new(p, s)
+			p:GetPropertyChangedSignal('AbsoluteSize'):connect(function()
+				s.Size = UDim2.new(s.Size.X.Scale, s.Size.X.Offset, s.Size.Y.Scale, p.AbsoluteSize.Y);
+			end)
+		end
+	end
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(BXLSS_fake_script)()
